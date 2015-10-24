@@ -21,7 +21,7 @@
 - (void)layoutLayer:(CALayer *)layer {
 	
     // null rect union any other rect will return the other rect
-	CGRect mainRect = CGRectNull;
+	CGRect mainRect = CGRectZero;
 	
 	/** make mainrect the UNION of all sublayer's frames (i.e. their individual "bounds" inside THIS layer's space) */
 	for ( CALayer *currentLayer in [layer sublayers] )
